@@ -5,6 +5,7 @@ public class Category {
     private String categoryName;
     // Jackson only requires a default constructor and setter getters
     // otherwise need to use @JsonCreator
+
     public Category() {
     }
     public String getCategoryName() {
@@ -22,4 +23,5 @@ public class Category {
     public void setCategoryId(long categoryId) {
         this.categoryId = categoryId;
     }
+
 }
