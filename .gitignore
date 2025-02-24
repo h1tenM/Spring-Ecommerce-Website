@@ -12,7 +12,17 @@ target/
 .settings
 .springBeans
 .sts4-cache
+.env
 
+# Ignore configuration files with sensitive data
+application.properties
+application.yml
+application-dev.properties
+application-prod.properties
+
+# Ignore IDE-specific files
+*.log
+*.tmp
 ### IntelliJ IDEA ###
 .idea
 *.iws

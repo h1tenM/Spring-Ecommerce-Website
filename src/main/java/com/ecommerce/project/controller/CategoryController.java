@@ -32,6 +32,7 @@ public class CategoryController {
     }
     @PostMapping("/public/categories")
     public ResponseEntity<String> createCategory(@RequestBody Category category) {
+        // Ideally I should use a DTO so I don't have to handle faulty json
         categoryService.createCategories(category);
         return new ResponseEntity<>("Resourse created", HttpStatus.CREATED);
     }
